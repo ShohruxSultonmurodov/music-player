@@ -1,0 +1,23 @@
+@media (max-width:992px) {
+    .navbar .menu-btn {
+        display: inline;
+    }
+    .container {
+        justify-content: center;
+    }
+    .music-dropdown {
+        display: none;
+    }
+    .resp-menu {
+        transform: translateX(-100%);
+        display: flex;
+    }
+    .resp-menu.show-menu {
+        transform: translateX(0);
+    }
+}
+@media (max-width:564px) {
+    .resp-menu ul button {
+        font-size: 16px;
+    }
+}

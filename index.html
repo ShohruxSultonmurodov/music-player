@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resp.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class='bx bxs-music'></i>
+            <p>Music</p>
+        </div>
+        <div class="menu-btn"><i class='bx bx-menu' ></i></div>
+    </div>
+    <div class="resp-menu">
+        <h4>Playlist</h4>
+        <ul class="menu-items">
+            <li><button class="resp-music-btn">Lilovaya</button></li>
+            <li><button class="resp-music-btn">Medina</button></li>
+            <li><button class="resp-music-btn">Искал-нашёл</button></li>
+            <li><button class="resp-music-btn">Leyla</button></li>
+            <li><button class="resp-music-btn">Колыбельная</button></li>
+            <li><button class="resp-music-btn">Люби меня</button></li>
+            <li><button class="resp-music-btn">Не жаль</button></li>
+            <li><button class="resp-music-btn">Самурай</button></li>
+            <li><button class="resp-music-btn">Minor</button></li>
+            <li><button class="resp-music-btn">Не грусти родная</button></li>
+            <li><button class="resp-music-btn">Горишь огнём</button></li>
+            <li><button class="resp-music-btn">Босс</button></li>
+            <li><button class="resp-music-btn">Комета</button></li>
+            <li><button class="resp-music-btn">Ты меня не помнишь</button></li>
+            <li><button class="resp-music-btn">Без тебя я не я</button></li>
+        </ul>
+    </div>
+    
+    <div class="line"></div>
+    <div class="container">
+        <div class="musics-menu">
+            <div class="music-dropdown">
+                <div class="dropdown-head">
+                    <img src="img/khalib.jpg" alt="img">
+                    <h2>Jah Khalib</h2>
+                    <button class="drop-btn">+</button>
+                </div>
+                <div class="dropdown-body">
+                    <ul>
+                        <li><button class="btn">Lilovaya</button></li>
+                        <li><button class="btn">Medina</button></li>
+                        <li><button class="btn">Искал-нашёл</button></li>
+                        <li><button class="btn">Leyla</button></li>
+                        <li><button class="btn">Колыбельная</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="music-dropdown">
+                <div class="dropdown-head">
+                    <img src="img/miyagi.png" alt="img">
+                    <h2>Miyagi</h2>
+                    <button class="drop-btn">+</button>
+                </div>
+                <div class="dropdown-body">
+                    <ul>
+                        <li><button class="btn">Люби меня</button></li>
+                        <li><button class="btn">Не жаль</button></li>
+                        <li><button class="btn">Самурай</button></li>
+                        <li><button class="btn">Minor</button></li>
+                        <li><button class="btn">Не грусти родная</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="music-dropdown">
+                <div class="dropdown-head">
+                    <img src="img/jony.jpg" alt="img">
+                    <h2>Jony</h2>
+                    <button class="drop-btn">+</button>
+                </div>
+                <div class="dropdown-body">
+                    <ul>
+                        <li><button class="btn">Горишь огнём</button></li>
+                        <li><button class="btn">Босс</button></li>
+                        <li><button class="btn">Комета</button></li>
+                        <li><button class="btn">Ты меня не помнишь</button></li>
+                        <li><button class="btn">Без тебя я не я</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="player">
+                <h3 id="title">Music Name</h3>
+                <h4 id="artist">Jah Khalib</h4>
+                <div class="icons">
+                    <button id="prev"><i class='bx bx-skip-previous'></i></button>
+                    <button id="play"><i class='bx bx-play' ></i></button>
+                    <button id="next"><i class='bx bx-skip-next' ></i></button>
+                </div>
+
+                <div class="music-volume">
+                    <div id="volm">0</div>
+                    <button id="volm-btn"><i class='bx bxs-volume-full'></i></button>
+                    <input id="volume" type="range" min="0" max="100" value="90">
+                </div>
+                <div class="music-position">
+                    <div id="show-time">00:00</div>
+                    <input id="position" type="range" min="0" max="100" value="0">
+                </div>
+                <div class="auto">
+                    <button id="auto">Auto play</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

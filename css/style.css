@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: #0D0F11;
+    color: white;
+    overflow: hidden;
+}
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+}
+.navbar .menu-btn {
+    font-size: 28px;
+    transition: .3s;
+    display: none;
+    cursor: pointer;
+}
+.navbar .menu-btn:hover {
+    color: #01C058;
+}
+.logo {
+    display: flex;
+    font-size: 32px;
+    color: #01C058;
+    margin: 12px;
+}
+.line {
+    width: 100%;
+    height: .2px;
+    background: #ffffff43;
+}
+.logo p {
+    margin-left: 12px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+.music-dropdown {
+    margin: 1rem 0;
+    width: 400px;
+    box-shadow: 0px 0px 12px 2px #ffffff3e;
+}
+.resp-menu {
+    position: fixed;
+    height: 100vh;
+    width: 45%;
+    background: #111415;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    transition: .5s;
+}
+.resp-menu h4 {
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+.resp-menu ul  {
+    list-style: none;
+    margin-top: 1rem;
+}
+.resp-menu ul button {
+    color: #ffffffbe;
+    margin: .2rem 0;
+    font-size: 18px;
+}
+.dropdown-head {
+    display: flex;
+    align-items: center;
+    background: #111415;
+    padding: 6px 1.2rem;
+    position: relative;
+    width: 100%;
+}
+.dropdown-head img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.dropdown-head h2 {
+    margin: 0 1rem;
+}
+.dropdown-head button {
+    position: absolute;
+    right: 1rem;
+    font-size: 42px;
+    color: #01C058;
+}
+.dropdown-body {
+    height: 0;
+    overflow: hidden;
+    padding: 0 2rem;
+    transition: .3s;
+}
+.dropdown-body.show-body {
+    padding: 10px 2rem;
+    height: 240px;
+}
+.dropdown-body ul {
+    list-style: none;
+}
+.dropdown-body ul button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 0;
+    font-size: 16px;
+    background: #01C058;
+    border-radius: 4px;
+    transition: .25s;
+}
+.dropdown-body ul button:hover {
+    box-shadow: 0px 0px 8px 3px #ffffff5a;
+}
+.player {
+    width: 400px;
+    background: #111415;
+    margin: 1rem 4rem;
+    text-align: center;
+    padding: 2.2rem .2rem;
+    box-shadow: 0px 0px 12px 2px #ffffff3e;
+}
+.player h3 {
+    font-size: 30px;
+}
+#artist {
+    color: #ffffffba;
+    font-style: italic;
+    margin-top: .4rem;
+    font-weight: 400;
+}
+.player .icons {
+    margin: 2rem 0;
+}
+.player .icons button {
+    font-size: 40px;
+    background: #01C058;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.player .icons button i {
+    margin-top: 5px;
+}
+.player .icons button:hover {
+    background: #0D0F11;
+    color: #fff;
+    box-shadow: 0px 0px 6px 3px #ffffff2c;
+}
+.player .music-volume {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.music-volume #volm, .player .music-position #show-time {
+    width: 30px;
+    height: 30px;
+    background: #0D0F11;
+    box-shadow: 0px 0px 4px 1px #ffffff2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.music-volume button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: #01C058;
+    margin: 0 10px;
+}
+.player .music-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player .music-position #show-time {
+    width: 70px;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin-top: 1rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #01C058;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input#position {
+    width: 60%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.auto {
+    margin-top: 3rem;
+}
+.auto button {
+    font-size: 18px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background: #0D0F11;
+    color: #fff;
+    box-shadow: 0px 0px 6px 3px #ffffff2c;
+    transition: .3s;
+}
+.auto button.active-btn{
+    background: #01C058;
+}
